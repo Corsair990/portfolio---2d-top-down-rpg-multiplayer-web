@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\users\\redbe\\onedrive\\documents\\portfolio---2d-top-down-rpg-multiplayer-web\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scenes\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scenes\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\users\\redbe\\onedrive\\documents\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\playerstatedamaged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\playerstatedamaged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\users\\redbe\\onedrive\\documents\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\playerstateattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\playerstateattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\users\\redbe\\onedrive\\documents\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\playerstateinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\playerstateinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\users\\redbe\\onedrive\\documents\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\playerstateidle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\playerstateidle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\users\\redbe\\onedrive\\documents\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\playerstatewalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\playerstatewalk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\users\\redbe\\onedrive\\documents\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\iplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\iplayerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scenes\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Scenes\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scenes\\MainMenu.cs",
+              "RelativeToolTip": "Scenes\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:50:54.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerStateDamaged.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateDamaged.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerStateDamaged.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateDamaged.cs",
+              "RelativeToolTip": "Scripts\\PlayerStateDamaged.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:17:08.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerStateAttack.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateAttack.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerStateAttack.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateAttack.cs",
+              "RelativeToolTip": "Scripts\\PlayerStateAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:16:29.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerStateInteract.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateInteract.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerStateInteract.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateInteract.cs",
+              "RelativeToolTip": "Scripts\\PlayerStateInteract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:15:59.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IPlayerState.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\IPlayerState.cs",
+              "RelativeDocumentMoniker": "Scripts\\IPlayerState.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\IPlayerState.cs",
+              "RelativeToolTip": "Scripts\\IPlayerState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:15:17.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerStateWalk.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateWalk.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerStateWalk.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateWalk.cs",
+              "RelativeToolTip": "Scripts\\PlayerStateWalk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:14:32.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerStateIdle.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateIdle.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerStateIdle.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\PlayerStateIdle.cs",
+              "RelativeToolTip": "Scripts\\PlayerStateIdle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:14:27.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scenes\\Player.cs",
+              "RelativeDocumentMoniker": "Scenes\\Player.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\Scenes\\Player.cs",
+              "RelativeToolTip": "Scenes\\Player.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowFEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T23:34:52.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "NetworkManager.cs",
+              "ToolTip": "C:\\Users\\redbe\\OneDrive\\Documents\\portfolio---2d-top-down-rpg-multiplayer-web\\NetworkManager.cs",
+              "RelativeToolTip": "NetworkManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T22:31:11.96Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
