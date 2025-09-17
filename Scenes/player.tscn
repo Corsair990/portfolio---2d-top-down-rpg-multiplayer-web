@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://dq8lx1gug7die"]
 
 [ext_resource type="Texture2D" uid="uid://bc4vlypstb3bo" path="res://Assets/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SpriteSheet.png" id="1_6t5aa"]
-[ext_resource type="Script" uid="uid://c1348dxgmvkke" path="res://Scenes/Player.cs" id="1_vgqql"]
+[ext_resource type="Script" uid="uid://c1348dxgmvkke" path="res://Scripts/Player.cs" id="1_vgqql"]
 [ext_resource type="Texture2D" uid="uid://bx17mraihy2l5" path="res://Assets/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SeparateAnim/Idle.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://cqwpimvgohcpe" path="res://Assets/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SeparateAnim/Walk.png" id="3_fkybt"]
 
@@ -192,24 +192,15 @@ animations = [{
 }]
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_vgqql"]
-properties/0/path = NodePath(".:FacingDirection")
+properties/0/path = NodePath(".:position")
 properties/0/spawn = true
-properties/0/replication_mode = 1
-properties/1/path = NodePath("Animator:animation")
+properties/0/replication_mode = 2
+properties/1/path = NodePath(".:rotation")
 properties/1/spawn = true
-properties/1/replication_mode = 1
-properties/2/path = NodePath("Animator:flip_h")
+properties/1/replication_mode = 2
+properties/2/path = NodePath(".:PlayerState")
 properties/2/spawn = true
-properties/2/replication_mode = 1
-properties/3/path = NodePath(".:position")
-properties/3/spawn = true
-properties/3/replication_mode = 1
-properties/4/path = NodePath(".:rotation")
-properties/4/spawn = true
-properties/4/replication_mode = 1
-properties/5/path = NodePath(".:CurrentAnimState")
-properties/5/spawn = true
-properties/5/replication_mode = 1
+properties/2/replication_mode = 2
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("anim", "synchronizer", "camera")]
 script = ExtResource("1_vgqql")
@@ -230,4 +221,5 @@ autoplay = "Idle_Up"
 visible = false
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+process_mode = 1
 replication_config = SubResource("SceneReplicationConfig_vgqql")

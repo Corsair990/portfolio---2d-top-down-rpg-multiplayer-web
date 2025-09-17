@@ -5,7 +5,7 @@ public partial class PlayerStateIdle : IPlayerState
 {
     public IPlayerState DoState(Player _player, double _delta)
     {
-        switch (_player.FacingDirection)
+        switch (_player.facing)
         {
             case Facing.Up: _player.anim.Play("Idle_Up"); break;
             case Facing.Down: _player.anim.Play("Idle_Down"); break;
@@ -33,11 +33,11 @@ public partial class PlayerStateIdle : IPlayerState
 
     public void EnterState(Player _player)
     {
-        GD.Print("Entered State: IDLE.");
+        //GD.Print("Entered State: IDLE.");
     }
 
     public void ExitState(Player _player)
     {
-        GD.Print("Exited State: IDLE.");
+        //GD.Print("Exited State: IDLE.");
     }
 }

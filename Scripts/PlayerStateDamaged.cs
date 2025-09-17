@@ -5,7 +5,7 @@ public partial class PlayerStateDamaged : IPlayerState
 {
     public IPlayerState DoState(Player _player, double _delta)
     {
-        switch (_player.FacingDirection)
+        switch (_player.facing)
         {
             case Facing.Up: _player.anim.Play("Damaged_Up"); break;
             case Facing.Down: _player.anim.Play("Damaged_Down"); break;
@@ -27,11 +27,11 @@ public partial class PlayerStateDamaged : IPlayerState
 
     public void EnterState(Player _player)
     {
-        GD.Print("Entered State: DAMAGED.");
+        //GD.Print("Entered State: DAMAGED.");
     }
 
     public void ExitState(Player _player)
     {
-        GD.Print("Exited State: DAMAGED.");
+        //GD.Print("Exited State: DAMAGED.");
     }
 }

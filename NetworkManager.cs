@@ -1,124 +1,53 @@
 using Godot;
-using System;
-using System.Net;
 
 public partial class NetworkManager : Node
 {
-    const string SERVER_IP = "127.0.0.1";
-    const int SERVER_PORT = 7777;
-
-    [Export] private MultiplayerSpawner _spawner;
-    [Export] private PackedScene _playerScene;
-
+    private const int serverPort = 7777;
+    [Export] private PackedScene levelScene;
 
     public override void _Ready()
     {
-        Multiplayer.PeerConnected += OnClientConnected;
-        Multiplayer.PeerDisconnected += OnClientDisconnected;
-        Multiplayer.ConnectedToServer += OnConnectedToServer;
-        Multiplayer.ConnectionFailed += OnConnectionFailed;
+        Multiplayer.PeerConnected += OnPeerConnected;
     }
 
     public void SetupServer()
     {
-        GD.Print("Starting server.");
-
         var peer = new ENetMultiplayerPeer();
+        peer.CreateServer(serverPort);
 
-        var error = peer.CreateServer(SERVER_PORT);
-        
-        if (error != Error.Ok)
-        {
-            GD.PrintErr($"Failed to create server: {error}");
-            return;
-        }
-        Multiplayer.MultiplayerPeer = peer;
-        GD.Print("Server created.");
+        var multiplayer = new SceneMultiplayer();
+        multiplayer.MultiplayerPeer = peer;
+        GetTree().SetMultiplayer(multiplayer);
 
         GetTree().ChangeSceneToFile("res://Scenes/world.tscn");
     }
 
     public void SetupClient()
     {
-        if (OS.HasFeature("web"))
-        {
-            GD.Print("Running on web, using websockets...");
+        var peer = new ENetMultiplayerPeer();
+        peer.CreateClient("127.0.0.1", serverPort);
 
-            var peer = new WebSocketMultiplayerPeer();
+        var multiplayer = new SceneMultiplayer();
+        multiplayer.MultiplayerPeer = peer;
+        GetTree().SetMultiplayer(multiplayer);
 
-            peer.CreateClient($"{SERVER_IP}:{SERVER_PORT}");
-        }
-
-        else 
-        {
-            GD.Print("Running on Desktop/Mobile using Enet.");
-
-            var peer = new ENetMultiplayerPeer();
-            var error = peer.CreateClient(SERVER_IP, SERVER_PORT);
-            
-            if (error != Error.Ok)
-            {
-                GD.PrintErr($"Failed to create client: {error}");
-                return;
-            }
-            
-            Multiplayer.MultiplayerPeer = peer;
-        }
+        GetTree().ChangeSceneToFile("res://Scenes/world.tscn");
     }
 
-    private void OnClientConnected(long _id)
+    private void OnPeerConnected(long _id)
     {
-        GD.Print($"Player connected! ID: {_id}");
-        
-        if (!Multiplayer.IsServer()) return;
-
-        RpcId(_id, nameof(ClientLoadGameScene), "res://Scenes/world.tscn");
-
-        Player playerInstance = _playerScene.Instantiate<Player>();
-
-        playerInstance.Name = _id.ToString();
-
-        _spawner.AddChild(playerInstance);
-
-        playerInstance.SetMultiplayerAuthority((int)_id);
-    }
-
-    private void OnConnectionFailed()
-    {
-        GD.PrintErr("Connection failed.");
-    }
-
-    private void OnConnectedToServer()
-    {
-        GD.Print("Connected to server.");
-    }
-
-    private void OnClientDisconnected(long _id)
-    {
-        GD.Print($"Client {_id} disconnected to server.");
+        if (_id == 1) return;
+        RpcId(_id, nameof(LoadScene), levelScene.ResourcePath);
     }
 
     [Rpc(MultiplayerApi.RpcMode.AnyPeer)]
-    private void ClientLoadGameScene(string scenePath)
+    private void LoadScene(string scenePath)
     {
         GetTree().ChangeSceneToFile(scenePath);
     }
 
-    private void SpawnPlayer(long _id)
+    public override void _ExitTree()
     {
-
-        if (!Multiplayer.IsServer()) return;
-
-        Player playerInstance = _playerScene.Instantiate<Player>();
-
-
-        playerInstance.Name = _id.ToString();
-
-
-        _spawner.AddChild(playerInstance);
-
-
-        playerInstance.SetMultiplayerAuthority((int)_id);
+        Multiplayer.PeerConnected -= OnPeerConnected;
     }
-
 }

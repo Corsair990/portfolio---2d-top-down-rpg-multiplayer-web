@@ -6,7 +6,7 @@ public partial class PlayerStateAttack : IPlayerState
 {
     public IPlayerState DoState(Player _player, double _delta)
     {
-        switch (_player.FacingDirection)
+        switch (_player.facing)
         {
             case Facing.Up: _player.anim.Play("Attack_Sword_Up"); break;
             case Facing.Down: _player.anim.Play("Attack_Sword_Down"); break;
@@ -29,11 +29,11 @@ public partial class PlayerStateAttack : IPlayerState
 
     public void EnterState(Player _player)
     {
-        GD.Print("Entered State: ATTACK.");
+        //GD.Print("Entered State: ATTACK.");
     }
 
     public void ExitState(Player _player)
     {
-        GD.Print("Exited State: ATTACK.");
+        //GD.Print("Exited State: ATTACK.");
     }
 }

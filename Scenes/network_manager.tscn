@@ -1,14 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://ddv0gbwms8vmr"]
 
 [ext_resource type="Script" uid="uid://c34p0p5834nf8" path="res://NetworkManager.cs" id="1_tbq58"]
-[ext_resource type="PackedScene" uid="uid://dq8lx1gug7die" path="res://Scenes/player.tscn" id="2_2po0p"]
+[ext_resource type="PackedScene" uid="uid://celg8y757bmuj" path="res://Scenes/world.tscn" id="2_2po0p"]
 
-[node name="Network Manager" type="Node" node_paths=PackedStringArray("_spawner")]
+[node name="Network Manager" type="Node"]
 script = ExtResource("1_tbq58")
-_spawner = NodePath("MultiplayerSpawner")
-_playerScene = ExtResource("2_2po0p")
-
-[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
-spawn_path = NodePath("Node2D")
-
-[node name="Node2D" type="Node2D" parent="MultiplayerSpawner"]
+_levelScene = ExtResource("2_2po0p")

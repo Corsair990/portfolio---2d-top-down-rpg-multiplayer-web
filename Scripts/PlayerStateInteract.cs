@@ -5,7 +5,7 @@ public partial class PlayerStateInteract : IPlayerState
 {
     public IPlayerState DoState(Player _player, double _delta)
     {
-        switch (_player.FacingDirection)
+        switch (_player.facing)
         {
             case Facing.Up: _player.anim.Play("Interact_Up"); break;
             case Facing.Down: _player.anim.Play("Interact_Down"); break;
@@ -18,11 +18,11 @@ public partial class PlayerStateInteract : IPlayerState
 
     public void EnterState(Player _player)
     {
-        GD.Print("Entered State: INTERACT.");
+        //GD.Print("Entered State: INTERACT.");
     }
 
     public void ExitState(Player _player)
     {
-        GD.Print("Exited State: INTERACT.");
+        //GD.Print("Exited State: INTERACT.");
     }
 }
