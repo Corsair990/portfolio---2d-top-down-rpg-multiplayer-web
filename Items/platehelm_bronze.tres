@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://c5qss8lmhxgop"]
+
+[ext_resource type="Script" uid="uid://00a8trgeuwki" path="res://Scripts/ItemData.cs" id="1_wvc4w"]
+[ext_resource type="Texture2D" uid="uid://dsv8rn0r53xw" path="res://Assets/Ninja Adventure - Asset Pack/Items/Resource/Rock.png" id="1_ycuho"]
+
+[resource]
+script = ExtResource("1_wvc4w")
+itemID = 6
+name = "Bronze Platehelm"
+icon = ExtResource("1_ycuho")
+metadata/_custom_type_script = "uid://00a8trgeuwki"

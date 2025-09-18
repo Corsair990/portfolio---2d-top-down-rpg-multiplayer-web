@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://coedyx0kppoao"]
+
+[ext_resource type="Script" uid="uid://cbp0im0tl3gf5" path="res://Scripts/InventorySlotUI.cs" id="1_cxkbx"]
+[ext_resource type="FontFile" uid="uid://bga75rtxjy3uj" path="res://Assets/Ninja Adventure - Asset Pack/Ui/Font/NormalFont.ttf" id="1_n42p7"]
+
+[node name="InventorySlotUI" type="PanelContainer" node_paths=PackedStringArray("itemTexture", "quantityLabel")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cxkbx")
+itemTexture = NodePath("Icon")
+quantityLabel = NodePath("Quantity")
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="Quantity" type="Label" parent="."]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_n42p7")
+horizontal_alignment = 2
+vertical_alignment = 2

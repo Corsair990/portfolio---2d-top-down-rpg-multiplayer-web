@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b4dqhjpjh64yi"]
+
+[ext_resource type="Texture2D" uid="uid://b428ywd330enc" path="res://Assets/Ninja Adventure - Asset Pack/Items/Tool/Axe.png" id="1_0jjo5"]
+[ext_resource type="Script" uid="uid://00a8trgeuwki" path="res://Scripts/ItemData.cs" id="1_ifmob"]
+
+[resource]
+script = ExtResource("1_ifmob")
+itemID = 3
+name = "Bronze Dagger"
+icon = ExtResource("1_0jjo5")
+metadata/_custom_type_script = "uid://00a8trgeuwki"
