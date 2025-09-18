@@ -1,39 +1,38 @@
 using Godot;
-using System;
-using System.Collections;
 
 public partial class PlayerStateAttack : IPlayerState
 {
-    public IPlayerState DoState(Player _player, double _delta)
+    public void Enter(CharacterController _controller)
     {
-        switch (_player.facing)
-        {
-            case Facing.Up: _player.anim.Play("Attack_Sword_Up"); break;
-            case Facing.Down: _player.anim.Play("Attack_Sword_Down"); break;
-            case Facing.Left: _player.anim.Play("Attack_Sword_Right"); break;
-            case Facing.Right: _player.anim.Play("Attack_Sword_Right"); break;
-        }
+        _controller.Velocity = Vector2.Zero;
 
-        if (!_player.isAttacking)
-        {
-            if (!_player.Velocity.IsZeroApprox())
-            {
-                return _player.walk;
-            }
-            else
-                return _player.idle;
-        }
-
-        return _player.attack;
+        _controller.animationController.UpdateAnimation(PlayerState.Attack);
     }
 
-    public void EnterState(Player _player)
+    public void Process(CharacterController _controller, double _delta)
     {
-        //GD.Print("Entered State: ATTACK.");
+
     }
 
-    public void ExitState(Player _player)
+    public void PhysicsProcess(CharacterController _controller, double _delta, byte _packedInput)
     {
-        //GD.Print("Exited State: ATTACK.");
+        _controller.Velocity = Vector2.Zero;
+
+        byte moveInputs = (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3);
+
+        if ((_packedInput & moveInputs) != 0) // Quick movement check.
+        {
+            _controller.stateMachine.TransitionTo(PlayerState.Walk);
+        }
+
+        if ((_packedInput & (1 << 5)) != 0) // Attack check.
+        {
+            _controller.stateMachine.TransitionTo(PlayerState.Attack);
+        }
+    }
+
+    public void Exit(CharacterController _controller)
+    {
+
     }
 }
