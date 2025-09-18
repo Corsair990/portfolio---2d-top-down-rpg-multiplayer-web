@@ -13,10 +13,13 @@ The architecture is centered around a **dedicated server** model, ensuring secur
 
 * **Dedicated Server Architecture:** The server is the ultimate authority, preventing common cheats.
 * **Client-Side Prediction & Server Reconciliation:** Player movement feels instantly responsive to the local player while being smoothly corrected by the server's authoritative state.
-* **Networked State Machine:** A clean and extensible state machine pattern manages player animations and logic.
-* **Bandwidth Optimization:** Player state and facing direction are packed into a single `short` using bitmasking, minimizing network traffic.
-* **Dynamic Player Spawning:** A robust handshake protocol allows clients to connect, load the level, and be spawned into the world safely and reliably.
+* **Networked State Machine:** A clean and extensible state machine pattern.
+* **Animation Controller:** Handles all the animation logic.
+* **Bandwidth Optimization:** Player input/facing is sent to the server using bitmasking, I will be minimizing network traffic using optimizations where I can.
+* **Dynamic Player Spawning:** A robust system to be spawned into the world safely and reliably.
 * **Movement Interpolation:** Smoothly renders remote player movement, eliminating network jitter.
+* **Networked Inventory:** A properly networked and authoritative inventory system. -- TODO
+* **Quest & Dialogue:** A questing and dialgue system. -- TODO
 
 # Built With
 
