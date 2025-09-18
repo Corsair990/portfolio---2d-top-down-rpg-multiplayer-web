@@ -27,6 +27,7 @@ project/assembly_name="Portfolio - 2D Top Down RPG Multiplayer Web"
 
 folder_colors={
 "res://Assets/": "red",
+"res://Items/": "pink",
 "res://Scripts/": "green"
 }
 

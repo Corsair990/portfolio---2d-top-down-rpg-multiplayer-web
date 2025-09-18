@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://bsefgnaphxei8"]
+
+[ext_resource type="Texture2D" uid="uid://r3opxkaghd88" path="res://Assets/Ninja Adventure - Asset Pack/Items/Food/Sushi2.png" id="1_7ae7m"]
+[ext_resource type="Script" uid="uid://00a8trgeuwki" path="res://Scripts/ItemData.cs" id="1_twn1m"]
+
+[resource]
+script = ExtResource("1_twn1m")
+itemID = 2
+name = "Short Bow"
+icon = ExtResource("1_7ae7m")
+metadata/_custom_type_script = "uid://00a8trgeuwki"

@@ -6,5 +6,6 @@ public partial class ItemData : Resource
 {
     [Export] public ushort itemID;
     [Export] public string name;
-    [Export] public Texture2D texture;
+    [Export] public Texture2D icon;
+    [Export] public int maxStackSize = 1;
 }

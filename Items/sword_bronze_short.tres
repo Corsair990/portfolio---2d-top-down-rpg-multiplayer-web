@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cn370lha4awce"]
+
+[ext_resource type="Script" uid="uid://00a8trgeuwki" path="res://Scripts/ItemData.cs" id="1_8igtg"]
+[ext_resource type="Texture2D" uid="uid://218tp1rd0pfu" path="res://Assets/Ninja Adventure - Asset Pack/Items/Tool/Hoe.png" id="1_vglwe"]
+
+[resource]
+script = ExtResource("1_8igtg")
+itemID = 8
+name = "Bronze Short Sword"
+icon = ExtResource("1_vglwe")
+metadata/_custom_type_script = "uid://00a8trgeuwki"

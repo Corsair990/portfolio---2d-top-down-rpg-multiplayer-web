@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dq8lx1gug7die"]
+[gd_scene load_steps=38 format=3 uid="uid://dq8lx1gug7die"]
 
 [ext_resource type="Script" uid="uid://c8p82cydktsu3" path="res://Scripts/CharacterController.cs" id="1_3smsa"]
 [ext_resource type="Texture2D" uid="uid://bc4vlypstb3bo" path="res://Assets/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SpriteSheet.png" id="1_6t5aa"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://bydmeetvdi6ux" path="res://Assets/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SeparateAnim/Attack.png" id="4_8erm5"]
 [ext_resource type="Script" uid="uid://bu7v86v51pnny" path="res://Scripts/Inventory.cs" id="5_fkybt"]
 [ext_resource type="Script" uid="uid://66rdmfc2e3ls" path="res://Scripts/AnimationController.cs" id="7_f1ek2"]
+[ext_resource type="Script" uid="uid://bb82ujc3qa60t" path="res://Scripts/InventoryUI.cs" id="9_tx1dd"]
+[ext_resource type="PackedScene" uid="uid://coedyx0kppoao" path="res://Scenes/inventory_slot_ui.tscn" id="10_gymyn"]
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_vgqql"]
 properties/0/path = NodePath(".:position")
@@ -284,3 +286,32 @@ shape = SubResource("RectangleShape2D_6t5aa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
+
+[node name="InventoryUI" type="Control" parent="." node_paths=PackedStringArray("inventory", "gridContainer")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("9_tx1dd")
+inventory = NodePath("../Inventory")
+gridContainer = NodePath("MarginContainer/GridContainer")
+slotScene = ExtResource("10_gymyn")
+
+[node name="BackgroundPanel" type="NinePatchRect" parent="InventoryUI"]
+layout_mode = 0
+offset_right = 62.0
+offset_bottom = 47.0
+
+[node name="MarginContainer" type="MarginContainer" parent="InventoryUI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="InventoryUI/MarginContainer"]
+layout_mode = 2
+columns = 4
