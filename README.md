@@ -18,7 +18,7 @@ The architecture is centered around a **dedicated server** model, ensuring secur
 * **Bandwidth Optimization:** Player input/facing is sent to the server using bitmasking, I will be minimizing network traffic using optimizations where I can.
 * **Dynamic Player Spawning:** A robust system to be spawned into the world safely and reliably.
 * **Movement Interpolation:** Smoothly renders remote player movement, eliminating network jitter.
-* **Networked Inventory:** A properly networked and authoritative inventory system. -- TODO
+* **Networked Inventory:** A properly networked and authoritative inventory system. -- IN PROGRESS. INITIAL VERSION JUST COMMITED.
 * **Quest & Dialogue:** A questing and dialgue system. -- TODO
 
 # Built With
