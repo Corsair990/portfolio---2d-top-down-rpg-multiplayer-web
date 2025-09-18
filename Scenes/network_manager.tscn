@@ -5,4 +5,4 @@
 
 [node name="Network Manager" type="Node"]
 script = ExtResource("1_tbq58")
-_levelScene = ExtResource("2_2po0p")
+levelScene = ExtResource("2_2po0p")

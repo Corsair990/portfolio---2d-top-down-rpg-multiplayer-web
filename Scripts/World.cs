@@ -2,17 +2,27 @@ using Godot;
 
 public partial class World : Node
 {
-    [Export] private Node _playerContainer;
-    [Export] private PackedScene _playerScene;
+    [Export] private Node playerContainer;
+    [Export] private PackedScene playerScene;
 
-    public override void _EnterTree()
+    public override void _Ready()
     {
-        Multiplayer.ConnectedToServer += OnConnectedToServer;
+        if (Multiplayer.IsServer())
+        {
+            // The server listens for this signal directly. No client request is needed.
+            Multiplayer.PeerConnected += OnPeerConnected;
+            Multiplayer.PeerDisconnected += OnPeerDisconnected;
+        }
     }
 
-    private void OnConnectedToServer()
+    private void OnPeerConnected(long _id)
     {
-        RpcId(1, nameof(RequestSpawn), Multiplayer.GetUniqueId());
+        SpawnPlayer(_id);
+    }
+
+    private void OnPeerDisconnected(long _id) 
+    {
+        
     }
 
     [Rpc(MultiplayerApi.RpcMode.AnyPeer)]
@@ -23,21 +33,21 @@ public partial class World : Node
         SpawnPlayer(_id);
     }
 
-    [Rpc(MultiplayerApi.RpcMode.AnyPeer, CallLocal = true, TransferMode = MultiplayerPeer.TransferModeEnum.Reliable)]
     private void SpawnPlayer(long _id)
     {
-        if (_playerContainer.GetNodeOrNull(_id.ToString()) != null) return;
+        GD.Print($"Server is spawning player for ID: {_id}");
 
-        GD.Print($"Peer {Multiplayer.GetUniqueId()} is creating player for ID: {_id}");
-
-        var playerInstance = _playerScene.Instantiate<Player>();
+        var playerInstance = playerScene.Instantiate<CharacterController>();
         playerInstance.Name = _id.ToString();
 
-        _playerContainer.AddChild(playerInstance);
+        playerContainer.AddChild(playerInstance);
+
+        playerInstance.Rpc(nameof(CharacterController.SetOwner), _id);
     }
 
     public override void _ExitTree()
     {
-        Multiplayer.ConnectedToServer -= OnConnectedToServer;
+        Multiplayer.PeerConnected -= OnPeerConnected;
+        Multiplayer.PeerDisconnected -= OnPeerDisconnected;
     }
 }

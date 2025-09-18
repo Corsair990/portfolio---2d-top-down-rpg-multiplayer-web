@@ -1,28 +1,36 @@
 using Godot;
-using System;
 
 public partial class PlayerStateInteract : IPlayerState
 {
-    public IPlayerState DoState(Player _player, double _delta)
+    public void Enter(CharacterController _controller)
     {
-        switch (_player.facing)
+        _controller.animationController.UpdateAnimation(PlayerState.Interact);
+    }
+
+    public void Process(CharacterController _controller, double _delta)
+    {
+
+    }
+
+    public void PhysicsProcess(CharacterController _controller, double _delta, byte _packedInput)
+    {
+        _controller.Velocity = Vector2.Zero;
+
+        byte moveInputs = (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3);
+
+        if ((_packedInput & moveInputs) != 0) // Quick movement check.
         {
-            case Facing.Up: _player.anim.Play("Interact_Up"); break;
-            case Facing.Down: _player.anim.Play("Interact_Down"); break;
-            case Facing.Left: _player.anim.Play("Interact_Right"); break;
-            case Facing.Right: _player.anim.Play("Interact_Right"); break;
+            _controller.stateMachine.TransitionTo(PlayerState.Walk);
         }
 
-        return _player.interact;
+        if ((_packedInput & (1 << 5)) != 0) // Attack check.
+        {
+            _controller.stateMachine.TransitionTo(PlayerState.Attack);
+        }
     }
 
-    public void EnterState(Player _player)
+    public void Exit(CharacterController _controller)
     {
-        //GD.Print("Entered State: INTERACT.");
-    }
 
-    public void ExitState(Player _player)
-    {
-        //GD.Print("Exited State: INTERACT.");
     }
 }

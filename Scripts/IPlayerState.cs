@@ -1,15 +1,14 @@
-using Godot;
-using System;
-
 public interface IPlayerState
 {
-    // Runs when the state is first entered. Use for setup logic like starting an animation.
-    public void EnterState(Player _player);
+    // Runs when the state is first entered. Use for setup logic.
+    public void Enter(CharacterController _controller);
 
-    // Runs every physics frame. Contains the core logic for the state and checks for transitions.
-    // It should return the new state if a transition happens, otherwise return itself.
-    public IPlayerState DoState(Player _player, double _delta);
+    // Runs as normal _Process.
+    public void Process(CharacterController _controller, double _delta);
 
-    // Runs when the state is exited. Use for cleanup logic.
-    public void ExitState(Player _player);
+    // Runs as normal _PhysicsProcess.
+    public void PhysicsProcess(CharacterController _controller, double _delta, byte _packedInputs);
+
+    // Use for cleanup logic.
+    public void Exit(CharacterController _controller);
 }

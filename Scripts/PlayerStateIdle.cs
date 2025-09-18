@@ -1,43 +1,40 @@
 using Godot;
-using System;
 
 public partial class PlayerStateIdle : IPlayerState
 {
-    public IPlayerState DoState(Player _player, double _delta)
+    public void Enter(CharacterController _controller)
     {
-        switch (_player.facing)
-        {
-            case Facing.Up: _player.anim.Play("Idle_Up"); break;
-            case Facing.Down: _player.anim.Play("Idle_Down"); break;
-            case Facing.Left: _player.anim.Play("Idle_Right"); break;
-            case Facing.Right: _player.anim.Play("Idle_Right"); break;
-        }
+        _controller.Velocity = Vector2.Zero;
 
-        if (!_player.Velocity.IsZeroApprox())
-        {
-            return _player.walk;
-        }
-
-        if (Input.IsActionJustPressed("interact") && _player.isInteracting)
-        {
-            return _player.interact;
-        }
-
-        if (Input.IsActionJustPressed("attack"))
-        {
-            return _player.attack;
-        }
-
-        return _player.idle;
+        _controller.animationController.UpdateAnimation(PlayerState.Idle);
     }
 
-    public void EnterState(Player _player)
-    {
-        //GD.Print("Entered State: IDLE.");
+    public void Process(CharacterController _controller, double _delta)
+    { 
+        
     }
 
-    public void ExitState(Player _player)
+    public void PhysicsProcess(CharacterController _controller, double _delta, byte _packedInput)
     {
-        //GD.Print("Exited State: IDLE.");
+        _controller.Velocity = Vector2.Zero;
+
+        _controller.animationController.UpdateAnimation(PlayerState.Idle);
+
+        byte moveInputs = (1 << 0) | (1 << 1) | (1 << 2) | (1 << 3);
+
+        if ((_packedInput & moveInputs) != 0) // Quick movement check.
+        {
+            _controller.stateMachine.TransitionTo(PlayerState.Walk);
+        }
+
+        if ((_packedInput & (1 << 5)) != 0) // Attack check.
+        {
+            _controller.stateMachine.TransitionTo(PlayerState.Attack);
+        }
+    }
+
+    public void Exit(CharacterController _controller)
+    {
+
     }
 }
