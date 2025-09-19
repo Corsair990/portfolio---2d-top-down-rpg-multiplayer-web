@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dq8lx1gug7die"]
+[gd_scene load_steps=39 format=3 uid="uid://dq8lx1gug7die"]
 
 [ext_resource type="Script" uid="uid://c8p82cydktsu3" path="res://Scripts/CharacterController.cs" id="1_3smsa"]
 [ext_resource type="Texture2D" uid="uid://bc4vlypstb3bo" path="res://Assets/Ninja Adventure - Asset Pack/Actor/Characters/Knight/SpriteSheet.png" id="1_6t5aa"]
@@ -10,14 +10,21 @@
 [ext_resource type="Script" uid="uid://66rdmfc2e3ls" path="res://Scripts/AnimationController.cs" id="7_f1ek2"]
 [ext_resource type="Script" uid="uid://bb82ujc3qa60t" path="res://Scripts/InventoryUI.cs" id="9_tx1dd"]
 [ext_resource type="PackedScene" uid="uid://coedyx0kppoao" path="res://Scenes/inventory_slot_ui.tscn" id="10_gymyn"]
+[ext_resource type="Texture2D" uid="uid://bcbklw1lyc4pe" path="res://Assets/Ninja Adventure - Asset Pack/Ui/Theme/Theme Wood/nine_path_bg.png" id="11_gymyn"]
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_vgqql"]
-properties/0/path = NodePath(".:position")
+properties/0/path = NodePath(".:serverPosition")
 properties/0/spawn = true
 properties/0/replication_mode = 2
-properties/1/path = NodePath(".:rotation")
+properties/1/path = NodePath(".:serverVelocity")
 properties/1/spawn = true
 properties/1/replication_mode = 2
+properties/2/path = NodePath("Animator:animation")
+properties/2/spawn = true
+properties/2/replication_mode = 2
+properties/3/path = NodePath("Animator:flip_h")
+properties/3/spawn = true
+properties/3/replication_mode = 1
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vfarp"]
 atlas = ExtResource("4_8erm5")
@@ -259,6 +266,8 @@ synchronizer = NodePath("MultiplayerSynchronizer")
 stateMachine = NodePath("StateMachine")
 animationController = NodePath("AnimationController")
 camera = NodePath("Camera2D")
+walkSpeed = 300.0
+runSpeed = 400.0
 
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 process_mode = 1
@@ -286,25 +295,33 @@ shape = SubResource("RectangleShape2D_6t5aa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
+position_smoothing_enabled = true
 
-[node name="InventoryUI" type="Control" parent="." node_paths=PackedStringArray("inventory", "gridContainer")]
+[node name="Control" type="Control" parent="Camera2D"]
 layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="InventoryUI" type="Control" parent="Camera2D/Control" node_paths=PackedStringArray("inventory", "gridContainer")]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("9_tx1dd")
-inventory = NodePath("../Inventory")
+inventory = NodePath("../../../Inventory")
 gridContainer = NodePath("MarginContainer/GridContainer")
 slotScene = ExtResource("10_gymyn")
 
-[node name="BackgroundPanel" type="NinePatchRect" parent="InventoryUI"]
+[node name="BackgroundPanel" type="NinePatchRect" parent="Camera2D/Control/InventoryUI"]
 layout_mode = 0
 offset_right = 62.0
 offset_bottom = 47.0
+texture = ExtResource("11_gymyn")
 
-[node name="MarginContainer" type="MarginContainer" parent="InventoryUI"]
+[node name="MarginContainer" type="MarginContainer" parent="Camera2D/Control/InventoryUI"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -312,6 +329,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GridContainer" type="GridContainer" parent="InventoryUI/MarginContainer"]
+[node name="GridContainer" type="GridContainer" parent="Camera2D/Control/InventoryUI/MarginContainer"]
 layout_mode = 2
 columns = 4
