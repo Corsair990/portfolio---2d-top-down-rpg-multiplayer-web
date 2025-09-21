@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\animationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +19,24 @@
       "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,12 +47,8 @@
       "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\scripts\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:scripts\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|c:\\godot\\godot projects\\portfolio---2d-top-down-rpg-multiplayer-web\\clientevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8A2B8B0-1FC8-4D10-A344-1BE4E4FD81C8}|Portfolio - 2D Top Down RPG Multiplayer Web.csproj|solutionrelative:clientevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +58,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
+              "Title": "ClientEvents.cs",
+              "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\ClientEvents.cs",
+              "RelativeDocumentMoniker": "ClientEvents.cs",
+              "ToolTip": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\ClientEvents.cs",
+              "RelativeToolTip": "ClientEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T17:11:42.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\World.cs",
+              "RelativeDocumentMoniker": "Scripts\\World.cs",
+              "ToolTip": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\World.cs",
+              "RelativeToolTip": "Scripts\\World.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T16:16:28.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AnimationController.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\AnimationController.cs",
               "RelativeDocumentMoniker": "Scripts\\AnimationController.cs",
@@ -62,12 +94,11 @@
               "RelativeToolTip": "Scripts\\AnimationController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T00:17:19.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T00:17:19.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "ItemPickup.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\ItemPickup.cs",
               "RelativeDocumentMoniker": "Scripts\\ItemPickup.cs",
@@ -75,12 +106,11 @@
               "RelativeToolTip": "Scripts\\ItemPickup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T18:24:46.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T18:24:46.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "InventorySlotUI.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\InventorySlotUI.cs",
               "RelativeDocumentMoniker": "Scripts\\InventorySlotUI.cs",
@@ -88,25 +118,24 @@
               "RelativeToolTip": "Scripts\\InventorySlotUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T17:29:05.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T17:29:05.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "InventoryUI.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\InventoryUI.cs",
               "RelativeDocumentMoniker": "Scripts\\InventoryUI.cs",
               "ToolTip": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\InventoryUI.cs",
               "RelativeToolTip": "Scripts\\InventoryUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T17:27:05.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "InventorySlot.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\InventorySlot.cs",
               "RelativeDocumentMoniker": "Scripts\\InventorySlot.cs",
@@ -114,12 +143,11 @@
               "RelativeToolTip": "Scripts\\InventorySlot.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T16:42:03.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T16:42:03.375Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ItemData.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\ItemData.cs",
               "RelativeDocumentMoniker": "Scripts\\ItemData.cs",
@@ -127,12 +155,11 @@
               "RelativeToolTip": "Scripts\\ItemData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T16:26:01.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T16:26:01.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ItemDatabase.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\ItemDatabase.cs",
               "RelativeDocumentMoniker": "Scripts\\ItemDatabase.cs",
@@ -140,38 +167,36 @@
               "RelativeToolTip": "Scripts\\ItemDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T15:10:00.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T15:10:00.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\Inventory.cs",
               "RelativeDocumentMoniker": "Scripts\\Inventory.cs",
               "ToolTip": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\Inventory.cs",
               "RelativeToolTip": "Scripts\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwEsAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-18T00:55:24.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CharacterController.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\CharacterController.cs",
               "RelativeDocumentMoniker": "Scripts\\CharacterController.cs",
               "ToolTip": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\CharacterController.cs",
               "RelativeToolTip": "Scripts\\CharacterController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowFgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T20:15:41.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-17T20:15:41.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Godot\\Godot Projects\\portfolio---2d-top-down-rpg-multiplayer-web\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Scripts\\Player.cs",
@@ -179,8 +204,7 @@
               "RelativeToolTip": "Scripts\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T13:04:53.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T13:04:53.454Z"
             }
           ]
         }

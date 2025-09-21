@@ -8,6 +8,7 @@ public partial class CharacterController : CharacterBody2D
     [Export] public StateMachine stateMachine;
     [Export] public AnimationController animationController;
     [Export] public Camera2D camera;
+    public Control inventoryUI;
 
     private Queue<byte> inputQueue = new Queue<byte>();
 
@@ -18,6 +19,8 @@ public partial class CharacterController : CharacterBody2D
     [Export] public float walkSpeed = 175;
     [Export] public float runSpeed = 300;
     [Export] public float smoothingSpeed = 30f;
+
+    bool inventoryActive = false;
 
     public override void _Process(double _delta)
     {
@@ -77,6 +80,17 @@ public partial class CharacterController : CharacterBody2D
         if (Input.IsActionPressed("sprint")) packedInputs     |= (1 << 4);
         if (Input.IsActionJustPressed("attack")) packedInputs |= (1 << 5);
 
+        if (Input.IsActionJustPressed("toggle_inventory"))
+        {
+            if (inventoryUI != null)
+            {
+                inventoryActive = !inventoryActive;
+
+                inventoryUI.Visible = inventoryActive;
+            }
+        }
+
+
         //GD.Print($"[Client {ownerId}] Collected input: {packedInputs}");
         //inputQueue.Enqueue(packedInputs);
 
@@ -114,6 +128,7 @@ public partial class CharacterController : CharacterBody2D
         if (Multiplayer.GetUniqueId() == ownerId)
         {
             camera.Enabled = true;
+            GetNode<ClientEvents>("/root/ClientEvents").EmitSignal(ClientEvents.SignalName.PlayerSpawned, this);
         }
         else
         {
