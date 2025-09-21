@@ -2,19 +2,29 @@ using Godot;
 
 public partial class InventoryUI : Control
 {
-    [Export] private Inventory inventory;
+    [Export] public Inventory inventory;
     [Export] private GridContainer gridContainer;
     [Export] private PackedScene slotScene;
 
     public override void _Ready()
     {
-        for (int i = 0; i < inventory.inventorySize; i++)
+        GetNode<ClientEvents>("/root/ClientEvents").PlayerSpawned += OnPlayerSpawned;
+    }
+
+    private void OnPlayerSpawned(CharacterController _controller)
+    {
+        inventory = _controller.GetNode<Inventory>("Inventory");
+
+        if (inventory == null)
         {
-            var slot = slotScene.Instantiate<InventorySlotUI>();
-            gridContainer.AddChild(slot);
+            GD.Print($"Inventory is null.");
         }
 
-        inventory.SlotUpdated += OnInventorySlotUpdated;
+        _controller.inventoryUI = this;
+
+        GD.Print($"Inventory UI connected to {_controller.ownerId}.");
+
+        SetupSlots();
     }
 
     private void OnInventorySlotUpdated(int _slotIndex, ItemData _item, int _quantity)
@@ -22,5 +32,21 @@ public partial class InventoryUI : Control
         var slotUI = gridContainer.GetChild<InventorySlotUI>(_slotIndex);
 
         slotUI.Update(_item, _quantity);
+    }
+
+    public void SetupSlots()
+    {
+        inventory.SlotUpdated += OnInventorySlotUpdated;
+
+        for (int i = 0; i < inventory.inventorySize; i++)
+        {
+            var slot = slotScene.Instantiate<InventorySlotUI>();
+            gridContainer.AddChild(slot);
+        }
+    }
+
+    public override void _ExitTree()
+    {
+        inventory.SlotUpdated -= OnInventorySlotUpdated;
     }
 }
